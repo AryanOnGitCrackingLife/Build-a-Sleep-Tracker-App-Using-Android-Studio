@@ -1,0 +1,9 @@
+<resources>
+    <style name="Base.Theme.Mysleep" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">#BB86FC</item>
+        <item name="android:statusBarColor">#121212</item>
+        <item name="android:navigationBarColor">#121212</item>
+    </style>
+
+    <style name="Theme.Mysleep" parent="Base.Theme.Mysleep" />
+</resources>

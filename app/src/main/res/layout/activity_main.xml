@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#121212">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sleep_tracker_title"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="32dp"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="24dp"
+        app:cardBackgroundColor="#1E1E1E"
+        app:strokeWidth="0dp"
+        android:layout_marginBottom="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="32dp"
+            android:gravity="center">
+
+            <Chronometer
+                android:id="@+id/chronometer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#BB86FC"
+                android:textSize="48sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvSleepStage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sleep_stage_awake"
+                android:textColor="#888888"
+                android:layout_marginTop="8dp"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="32dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnStart"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="@string/btn_start"
+            app:cornerRadius="16dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#03DAC5"
+            android:textColor="#000000"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnStop"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="@string/btn_stop"
+            app:cornerRadius="16dp"
+            android:backgroundTint="#CF6679"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="#1E1E1E"
+        app:strokeWidth="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/tvSleepGoal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#E0E0E0"
+                android:text="Sleep Goal: 08:00:00"
+                android:drawableStart="@android:drawable/ic_lock_idle_alarm"
+                android:drawablePadding="12dp"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:id="@+id/tvAverageSleep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#E0E0E0"
+                android:text="Average: N/A"
+                android:drawableStart="@android:drawable/ic_menu_recent_history"
+                android:drawablePadding="12dp"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:id="@+id/tvLastSleep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#E0E0E0"
+                android:text="Last Session: N/A"
+                android:drawableStart="@android:drawable/ic_menu_my_calendar"
+                android:drawablePadding="12dp"/>
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnReset"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Reset"
+            android:textColor="#888888"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSettings"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Goal"
+            app:icon="@android:drawable/ic_menu_manage"/>
+    </LinearLayout>
+
+</LinearLayout>

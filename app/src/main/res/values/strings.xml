@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">mysleep</string>
+    <string name="sleep_tracker_title">Sleep Tracker</string>
+    <string name="sleep_stage_awake">Sleep Stage: Awake</string>
+    <string name="btn_start">Start</string>
+    <string name="btn_stop">Stop</string>
+    <string name="btn_reset">Reset</string>
+    <string name="btn_settings">Settings</string>
+    <string name="average_sleep_duration_na">Average Sleep Duration: N/A</string>
+    <string name="sleep_goal_not_set">Sleep Goal: Not set</string>
+    <string name="last_sleep_duration_na">Last Sleep Duration: N/A</string>
+    <string name="sleep_tracking_started">Sleep tracking started!</string>
+    <string name="sleep_tracking_already_running">Sleep tracking is already running.</string>
+    <string name="sleep_tracking_stopped">Sleep tracking stopped!</string>
+    <string name="sleep_tracking_not_started">Sleep tracking not started.</string>
+    <string name="sleep_tracking_reset">Sleep tracking reset!</string>
+    <string name="sleep_stage_light">Sleep Stage: Light Sleep</string>
+    <string name="sleep_stage_deep">Sleep Stage: Deep Sleep</string>
+    <string name="sleep_stage_rem">Sleep Stage: REM Sleep</string>
+    <string name="set_sleep_goal_title">Set Sleep Goal</string>
+    <string name="sleep_goal_updated_format">Sleep goal updated to %1$dh %2$dm</string>
+    <string name="slept_more_than_goal_format">You slept %1$d hour(s) more than your goal.</string>
+    <string name="slept_less_than_goal_format">You slept %1$d hour(s) less than your goal.</string>
+    <string name="sleep_goal_met">You met your sleep goal!</string>
+</resources>
